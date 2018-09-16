@@ -5,3 +5,33 @@
   justify-content: center;
   align-items: center;
 }
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+label {
+  overflow: hidden;
+  text-indent: 9999px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+}
+
+#checkbox_yoda + label {
+  background: url("../images/yoda.png");
+}
+#checkbox_trooper + label {
+  background: url("../images/trooper.png");
+}
+#checkbox_vader + label {
+  background: url("../images/vader.png");
+}
