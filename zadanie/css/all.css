@@ -24,14 +24,21 @@ input[type="checkbox"] + label {
   width: 250px;
   height: 250px;
   display: inline-block;
+  background-repeat: no-repeat;
+  border: 3px solid transparent;
+  border-radius: 20px;
 }
 
 #checkbox_yoda + label {
-  background: url("../images/yoda.png");
+  background-image: url("../images/yoda.png");
 }
 #checkbox_trooper + label {
-  background: url("../images/trooper.png");
+  background-image: url("../images/trooper.png");
 }
 #checkbox_vader + label {
-  background: url("../images/vader.png");
+  background-image: url("../images/vader.png");
+}
+
+input[type="checkbox"]:checked + label {
+  border-color: #000;
 }
