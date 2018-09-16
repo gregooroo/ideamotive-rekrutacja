@@ -12,8 +12,8 @@ li {
 }
 
 label {
-  overflow: hidden;
   text-indent: 9999px;
+  overflow: hidden;
 }
 
 input[type="checkbox"] {
@@ -27,6 +27,7 @@ input[type="checkbox"] + label {
   background-repeat: no-repeat;
   border: 3px solid transparent;
   border-radius: 20px;
+  position: relative;
 }
 
 #checkbox_yoda + label {
@@ -41,4 +42,20 @@ input[type="checkbox"] + label {
 
 input[type="checkbox"]:checked + label {
   border-color: #000;
+}
+
+input[type="checkbox"] + label:hover::after {
+  content: attr(data-sentence);
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: bold;
+  text-indent: 0;
 }
